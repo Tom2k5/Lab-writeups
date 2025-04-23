@@ -41,16 +41,16 @@ Start-Process -Filepath $LA4rJgSPpx
 
 - What is the Link-local IPv6 Address of the server? Enter the answer exactly as you see it.
 
-![[Pasted image 20250422232038.png]]
+![](../../Image/Pasted%20image%2020250423105228.png)
 => **fe80::e134:1b0c:c8d5:3020%6**
 
 - The attacker printed a flag for us to see. What is that flag?
 
-![[Pasted image 20250422232647.png]]
+![](../../Image/Pasted%20image%2020250423105244.png)
 
 - The attacker added a new account as a persistence mechanism. What is the username and password of that account? Format is **username:password** 
 
-![[Pasted image 20250422225827.png]]
+![](../../Image/Pasted%20image%2020250423105304.png)
 ```
 dir C:\Users\paco\Desktop\
 type C:\Users\paco\Desktop\Files\clients.csv
@@ -60,11 +60,11 @@ net user administrator WfD3hz3AXZ4n /add
 
 - The attacker found an important file on the server. What is the full path of that file?
 
-![[Pasted image 20250422232845.png]]
+![](../../Image/Pasted%20image%2020250423105347.png)
 => **C:\Users\paco\Desktop\Files\clients.csv**
 
 - What is the flag found inside the file from question 5?
 
-![[Pasted image 20250422232446.png]]
+![](../../Image/Pasted%20image%2020250423105335.png)
 => **C:\Users\paco\Desktop\Files\clients.csv**
 
