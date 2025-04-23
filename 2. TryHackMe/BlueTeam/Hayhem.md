@@ -37,7 +37,7 @@ Start-Process -Filepath $LA4rJgSPpx
 
 - What is the SID of the user that the attacker is executing everything under?
 
-![[../../Image/Pasted image 20250423101147.png]]
+![](../../Image/Pasted%20image%2020250423101528.png)
 
 - What is the Link-local IPv6 Address of the server? Enter the answer exactly as you see it.
 
@@ -68,4 +68,3 @@ net user administrator WfD3hz3AXZ4n /add
 ![[Pasted image 20250422232446.png]]
 => **C:\Users\paco\Desktop\Files\clients.csv**
 
-![[Pasted image 20250423091003.png]]
