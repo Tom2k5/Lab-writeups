@@ -60,7 +60,7 @@ if __name__ == "__main__":
 ![Alt text](CTF-writeups/SideQuests/akasec-ctf-2024/Solution/images/image.png)
 # Grip
 ## Overview
-![Alt text](Lab-writeups/4.%20SideQuests/akasec-ctf-2024/Solution/image/image.png)
+![Alt text](image/image.png)
 - Bài này lúc đầu mình tưởng là mã hóa từng byte của v14, từ đó tạo flag nhưng chưa đến mức ấy.
 - Mình bắt đầu công đoạn debug hàm main nhưng program nó không cho `:))`, có lẽ là anti-debug ở đâu đó => debug từ `start`.
 ![Alt text](CTF-writeups/SideQuests/akasec-ctf-2024/Solution/image/image-3.png)
@@ -69,9 +69,9 @@ if __name__ == "__main__":
 - Chạy tới đây thì bị exit => anti-debug tại đây. => F7 vào, ra 1 hàm.
 ![Alt text](CTF-writeups/SideQuests/akasec-ctf-2024/Solution/image/image-6.png)
 - Theo chương trình, nó sẽ chạy về false => set IP để sang true rồi debug tiếp.
-![Alt text](Lab-writeups/4.%20SideQuests/akasec-ctf-2024/Solution/image/image-7.png)
+![Alt text](image/image-7.png)
 - Ta đã call đc main.
-![Alt text](Lab-writeups/4.%20SideQuests/akasec-ctf-2024/Solution/image/image-8.png)
+![Alt text](image/image-8.png)
 - Ngắm ngía 1 lúc thì thấy sus mỗi cái `call rdx` vì ngoài này ra program mỗi gắn biến và `call mmap`(hàm ngoài).
 ![Screenshot 2024-06-10 130535](CTF-writeups/SideQuests/akasec-ctf-2024/Solution/image/Screenshot%202024-06-10%20130535.png)
 - Để ý kĩ, ta thấy hàm này nó có 1 vòng lặp tạo ra flag vì thấy `0x61` => "a" theo format.
