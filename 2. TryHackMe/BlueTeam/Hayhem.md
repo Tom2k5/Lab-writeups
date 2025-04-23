@@ -37,7 +37,7 @@ Start-Process -Filepath $LA4rJgSPpx
 
 - What is the SID of the user that the attacker is executing everything under?
 
-![[Lab-writeups/Image/Pasted image 20250423100816.png]]
+![[../../Image/Pasted image 20250423101147.png]]
 
 - What is the Link-local IPv6 Address of the server? Enter the answer exactly as you see it.
 
