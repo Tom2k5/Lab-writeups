@@ -12,7 +12,7 @@ Start-Process -Filepath $LA4rJgSPpx
 - **Object list:**
 ![[../../Image/Pasted image 20250423095009.png]]
 - **notepad.exe**
-![[Pasted image 20250422214535.png]]
+![[../../Image/Pasted image 20250423100437.png]]
 - **Havoc Artifact** from network traffic
 ```
 [+] Parsing Request
