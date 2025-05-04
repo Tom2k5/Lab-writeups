@@ -1,1 +1,1 @@
-- This is the place where I share my lab.
+- This is the place where I share my writeups.
