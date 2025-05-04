@@ -1,0 +1,48 @@
+# Skills Assessment - Web Fuzzing
+1. Run a sub-domain/vhost fuzzing scan on '*.academy.htb' for the IP shown above. What are all the sub-domains you can identify? (Only write the sub-domain name)
+![](../../../Image/Pasted%20image%2020250429140615.png)
+```
+academy.htb
+archive.academy.htb
+test.academy.htb
+faculty.academy.htb
+```
+
+2. Before you run your page fuzzing scan, you should first run an extension fuzzing scan. What are the different extensions accepted by the domains?
+```
+ffuf -w domain.txt:W1,/usr/share/seclists/Discovery/Web-Content/web-extensions.txt:W2 -u http://W1:40268/indexW2
+```
+![](../../../Image/Pasted%20image%2020250429142710.png)
+```
+academy.htb -> php, phps
+test.academy.htb -> php, phps
+faculty.academy.htb -> php, php7, phps
+archive.academy.htb -> php, phps
+```
+
+3. One of the pages you will identify should say 'You don't have access!'. What is the full page URL?
+
+![](../../../Image/Pasted%20image%2020250429144919.png)
+
+```
+
+```
+
+![](../../../Image/Pasted%20image%2020250429151708.png)
+
+- Vì quá nhiều response size trùng -> `-fs 0,287`
+
+![](../../../Image/Pasted%20image%2020250429152914.png)
+![](../../../Image/Pasted%20image%2020250429153046.png)
+
+4. In the page from the previous question, you should be able to find multiple parameters that are accepted by the page. What are they?
+
+![](../../../Image/Pasted%20image%2020250429154659.png)
+
+![](../../../Image/Pasted%20image%2020250429160037.png)
+
+5. Try fuzzing the parameters you identified for working values. One of them should return a flag. What is the content of the flag?
+
+![](../../../Image/Pasted%20image%2020250429161236.png)
+
+![](../../../Image/Pasted%20image%2020250429161156.png)

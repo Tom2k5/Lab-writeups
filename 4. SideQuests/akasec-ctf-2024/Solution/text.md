@@ -60,7 +60,7 @@ if __name__ == "__main__":
 ![Alt text](CTF-writeups/SideQuests/akasec-ctf-2024/Solution/images/image.png)
 # Grip
 ## Overview
-![Alt text](image/image.png)
+![Alt text](../../../../Image/image.png)
 - Bài này lúc đầu mình tưởng là mã hóa từng byte của v14, từ đó tạo flag nhưng chưa đến mức ấy.
 - Mình bắt đầu công đoạn debug hàm main nhưng program nó không cho `:))`, có lẽ là anti-debug ở đâu đó => debug từ `start`.
 ![Alt text](CTF-writeups/SideQuests/akasec-ctf-2024/Solution/image/image-3.png)
