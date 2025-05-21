@@ -19,19 +19,14 @@ Our SOC alerted that there is some traffic related to crypto mining from a PC th
 
 ### Challenge Submission
 ---
-
 1. How many browser-profiles are present in Google Chrome?
 	- Answer: 2
-	
 2. What is the name of the browser theme installed on Google Chrome?
 	-  Answer: earth in space
-	
 3. Identify the Extension ID and Extension Name of the cryptominer _(2 points)_
 	- **Answer:** egnfmleidkolminhjlkaomjefheafbbb, DFP Cryptocurrency Miner
-	
 4. What is the description text of this extension? _(1 points)_
 	- **Answer:** Allows staff members to mine cryptocurrency in the background of their web browser
-	
 5. What is the name of the specific javascript web miner used in the browser extension? _(1 points)_
 	- **Answer:** CryptoLoot
 6. How many hashes is the crypto miner calculating per second? _(2 points)_
