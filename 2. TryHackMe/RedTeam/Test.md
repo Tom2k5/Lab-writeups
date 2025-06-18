@@ -90,14 +90,26 @@ shop.nahamstore.com
 ```
 cat hosts.txt | aquatone
 ```
-![](../../../Image/Pasted%20image%2020250426095559.png)
-![](../../../Image/Pasted%20image%2020250426094810.png)
-![](../../../Image/Pasted%20image%2020250426094844.png)
-![](../../../Image/Pasted%20image%2020250426095211.png)
-![](../../../Image/Pasted%20image%2020250426095238.png)
-![](../../../Image/Pasted%20image%2020250426104419.png)
-![](../../../Image/Pasted%20image%2020250426095331.png)
 
+
+![](../../Image/Pasted%20image%2020250426094810.png)
+
+
+![](../../Image/Pasted%20image%2020250426094844.png)
+
+![](../../Image/Pasted%20image%2020250426095211.png)
+
+![](../../Image/Pasted%20image%2020250426095238.png)
+
+![](../../Image/Pasted%20image%2020250426095308.png)
+
+![](../../Image/Pasted%20image%2020250426095331.png)
+
+![](../../Image/Pasted%20image%2020250426095559.png)
+
+![](../../Image/Pasted%20image%2020250426104419.png)
+
+![](../../Image/Pasted%20image%2020250426134046.png)
 - Tìm các directory
 ```
 ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u http://nahamstore.thm/FUZZ

